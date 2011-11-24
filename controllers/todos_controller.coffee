@@ -10,8 +10,6 @@ class Alfred.TodosController extends Batman.Controller
         callback = (error) -> throw error if error
         new Todo(body: 'joker', isDone: true).save()
     
-    @render false
-    
   create: =>
     @emptyTodo.save (error, record) =>
       throw error if error
