@@ -6,7 +6,10 @@
   <ul id="items">
     <li data-foreach-todo="Todo.all">
       <input type="checkbox" data-bind="todo.isDone" data-event-change="todo.save" />
-      <label data-bind="todo.body" data-addclass-done="todo.isDone" data-mixin="editable"></label>
+      <label data-hideif="todo.editing" data-bind="todo.body" data-event-doubleclick="todo.on_edit" data-addclass-done="todo.isDone" data-mixin="editable"></label>
+      <form data-showif="todo.editing" data-event-submit="todo.on_blur">
+        <input type="text" data-bind="todo.body" data-event-blur="todo.on_blur"/>
+      </form>
       <a data-event-click="todo.destroy">delete</a>
     </li>
     <li><span data-bind="Todo.all.length"></span> <span data-bind="'item' | pluralize Todo.all.length"></span></li>
