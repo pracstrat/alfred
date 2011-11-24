@@ -4,7 +4,7 @@
     <input class="new-item" placeholder="add a todo item" data-bind="todo.body" />
   </form>
   <ul id="items">
-    <li data-foreach-todo="Todo.all" data-mixin="animation">
+    <li data-foreach-todo="Todo.all">
       <input type="checkbox" data-bind="todo.isDone" data-event-change="todo.save" />
       <label data-bind="todo.body" data-addclass-done="todo.isDone" data-mixin="editable"></label>
       <a data-event-click="todo.destroy">delete</a>

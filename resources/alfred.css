@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-    font-family: 'Lobster';
+    font-family: 'Helvetica Neue';
     font-size: 42pt;
     padding-left: 20px;
     position: relative;
@@ -30,7 +30,7 @@ h1 {
 }
 
 .new-item {
-    font-family: 'Lobster';
+    font-family: 'Georgia';
     font-size: 18pt;
     text-align: center;
     display: block;
