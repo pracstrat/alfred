@@ -3,7 +3,7 @@
   "name": "Alfred",
   "description": "A example todo application using Batman",
   "version": "0.1.0",
-  "main": "build/app.js",
+  "main": "build/alfred.js",
   "engines": {
     "node": "*"
   },
