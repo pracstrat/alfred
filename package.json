@@ -1,0 +1,19 @@
+{
+  "author": "Jun <linjunpop@gmail.com>",
+  "name": "Alfred",
+  "description": "A example todo application using Batman",
+  "version": "0.1.0",
+  "main": "build/app.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "batman": "~>0.1.0"
+  },
+  "devDependencies": {},
+  "batman": {
+    "appName": "Alfred",
+    "build": true,
+    "buildDir": "./build"
+  }
+}
